@@ -1,0 +1,164 @@
+body {
+    /* background-color: #ff725e !important; */
+    background-color: #2e3038 !important;
+}
+.reg-container {
+    /* background-color: royalblue; */
+    /* background-color: #ff3500; */
+    background-color: #1f2128;
+}
+.reg-container img {
+    width: 100%;
+}
+
+.reg-left {
+    /* background-color: #ffb1a4; */
+    padding: 70px;
+    background-color: tomato;
+    height: 100%;
+}
+
+.reg-right {
+    background-color: transparent;
+    height: 100%;
+}
+
+.reg-right h4 {
+    color: white;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.reg-inputs {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: solid 1px rgb(187, 187, 187);
+    border-radius: 5px;
+}
+
+.reg-input-label {
+    color: white;
+}
+.h-seprator {
+    background-color: tomato;
+    height: 1px;
+    width: 100px;
+}
+
+.reg-inputs:focus {
+    border: solid 1px tomato;
+}
+.reg-button {
+    width: 100%;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.reg-button:hover {
+    background-color: tomato;
+}
+
+.reg-right a {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.reg-right a:hover {
+    color: tomato;
+}
+
+/* ----------------------- LOGIN ---------------------- */
+
+.login-container {
+    padding: 50px;
+    background-color: #1f2128da;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+}
+
+.login-header h4 {
+    color: tomato;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.login-label {
+    color: rgb(172, 172, 172);
+}
+
+.login-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: solid 1px rgb(187, 187, 187);
+    border-radius: 5px;
+}
+
+.login-input:focus {
+    border: solid 1px tomato;
+}
+
+.login-seperator {
+    height: 1px;
+    background-color: white;
+    width: 80px;
+}
+
+.login-button {
+    width: 100%;
+    background-color: royalblue;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: tomato;
+}
+
+.login-container a {
+    color: rgb(194, 194, 194);
+    letter-spacing: 2px;
+    font-size: 0.8rem !important;
+    display: block;
+    padding-top: 20px;
+}
+
+.login-container a:hover {
+    color: tomato;
+}
+
+.login-sec {
+    height: 100vh;
+
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("../musica_assets/images/homeback4.jpg");
+
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}

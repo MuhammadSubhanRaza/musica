@@ -1,0 +1,34 @@
+/* ---------------- MY PODCASTS ---------------- */
+
+.btn-addnewpodcast {
+    color: white;
+    background-color: tomato;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.btn-addnewpodcast:hover {
+    background-color: royalblue;
+    text-decoration: none;
+    color: white;
+}
+
+.addnewpod-btn-holder {
+    padding: 25px;
+    background-color: rgb(255, 203, 194);
+    color: rgb(105, 105, 105);
+    border-bottom: solid 3px tomato;
+}
+
+.addnewpod-btn-holder h1 {
+    font-size: 1.3rem;
+    padding-left: 20px;
+    text-transform: lowercase;
+    font-weight: 600;
+}
