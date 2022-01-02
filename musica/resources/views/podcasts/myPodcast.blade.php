@@ -26,6 +26,9 @@
                 <li class="item_filter_btn" data-filter=".s2">Season 2</li>
                 <li class="item_filter_btn" data-filter=".s3">Season 3</li>
               </ul> --}}
+
+
+
               
               
             </div>
@@ -103,7 +106,8 @@
                           <h1 class="d-inline">Add New Podcast</h1>
                       </div>
                       <div class="col-md-6 text-right pr-5">
-                        <a href="#" class="btn-addnewpodcast"><i class="fa fa-microphone"></i></a>
+                        <a href="#" class="btn-addnewpodcast" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                          <i class="fa fa-upload"></i> Upload New Track</a>
                       </div>
                   </div>
               </div>
@@ -201,5 +205,41 @@
         </div>
       </div>
     </div>
+
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" style="background-color: tomato !important" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="add-new-pod-modal-outter">
+    <h1>Upload Your Track</h1>
+    <p>upload mp3 file along with the title and description</p>
+  </div>
+  
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Upload Track</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form method="POST" action="" enctype="multipart/form-data">
+            @csrf
+            <input type="text" class="form-control" name="title" placeholder="Title">
+            <input type="text" class="form-control mt-3" name="description" placeholder="Description">
+            <label class="mt-3">Upload Audio File</label>
+            <input type="file" class="form-control mt-2" name="title" placeholder="Title">
+            <div class="pt-4 pb-4 text-right">
+                <button type="button" class="btn-add-new-podcast-modal-cancel" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn-add-new-podcast-modal-save">Save changes</button>
+            </div>
+        
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 @endsection

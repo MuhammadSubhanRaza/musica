@@ -30,9 +30,9 @@
                 <ul class="d-flex flex-row align-items-start justify-content-start">
                   <li><a href="/">Home</a></li>
                   <li><a href="{{route('about')}}">About</a></li>
-                  <li><a href="{{route('episodes')}}">Contributors</a></li>
                   <li><a href="{{route('contact')}}">Contact</a></li>
                   @auth
+                    <li><a href="{{route('episodes')}}">Stream</a></li>
                       <li style="background-color: tomato; padding:5px 15px; border-radius: 20px"><a href="{{route('mypodcast')}}">My Podcasts</a></li>
                   @endauth
                   
@@ -101,8 +101,8 @@
                     </x-jet-dropdown>
 
         @else
-          <div class="submit" style="background-color: tomato;"><a href="/register">Signup</a></div>
-          <div class="submit" style="background-color: white;"><a href="/login" style="color:royalblue !important;">Upload Your Podcast</a></div>
+          <div class="submit" style="background-color: tomato;"><a href="/register">Upload Your Poadcast</a></div>
+          <div class="submit" style="background-color: white;"><a href="/login" style="color:royalblue !important;">Login</a></div>
            <div class="social">
           <ul class="d-flex flex-row align-items-start justify-content-start">
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

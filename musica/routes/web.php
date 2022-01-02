@@ -42,3 +42,8 @@ Route::get('/addpodcast', function () {
 Route::get('/mypodcast', function () {
     return view('podcasts.myPodcast');
 })->name('mypodcast');
+
+Route::get('/postdetails', function () {
+    return view('podcasts.podcastdetail');
+})->name('postdetails');
+
